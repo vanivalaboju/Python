@@ -25,7 +25,6 @@ else:
    # XOR
 
 # Sets each bit to 1 if only one of two bits is 1
-
 # Example: a = 60 # 60 = 0011 1100
 
 b = 13 # 13 = 0000 1101
