@@ -12,9 +12,12 @@ print(list(even_numbers))
 odd_numbers = filter(odd,numbers)
 print(list(odd_numbers))
 
-# # we can also used to write in one line lambda function
-# num = [1,4,7,8,9,11,12,14,17,16,19]
-# even_lambda = lambda num: num % 2 == 0
-# print(even_lambda)
-# odd_lambda = lambda num: num % 2 != 0
-# print(odd_lambda)
+def isEvenNumber(num):
+    return num % 2 == 0
+
+# we can also used to write in one line lambda function
+num = [1,4,7,8,9,11,12,14,17,16,19]
+even_lambda = lambda num: num % 2 == 0
+print([i for i in num if even_lambda(i)])
+odd_lambda = lambda num: num % 2 != 0
+print([i for i in num if odd_lambda(i)])
