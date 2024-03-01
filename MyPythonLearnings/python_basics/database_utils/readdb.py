@@ -1,4 +1,3 @@
-
 def read_from_db():
     print("Reading from DB")
 
